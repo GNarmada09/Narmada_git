@@ -35,7 +35,7 @@ RUNUSER=`/usr/bin/whoami`
   fi
 
 ###Step 4a
-
+/usr/bin/passwd=passwd -e
 /usr/bin/id $MYUSER
  if [ $? -eq 0 ]; then
     echo "The user $MYUSER is already present,then dont do anything"
@@ -49,13 +49,12 @@ echo $MYUSER |  /usr/bin/passwd --stdin $MYUSER
 
 ###Step 5 ****
 
+passwd -e $MYUSER
+
 
 ###Step 6
 
 echo "Added user  $MYUSER Successfully"
-
-
-
 
 
 
