@@ -7,15 +7,13 @@
 #version  :  1.0
 ###############################################
 
-STRING1 == STRING2
-STRING1 != STRING2
 
-# capture the user an assign to the variable  
+# capture the user an assign to the variable to string  
 
-STRING1 = `/usr/bin/whoami` 
-STRING2 = 'root'
+STRING1=`/usr/bin/whoami` 
+STRING2='root'
 
-if [ $STRING1 == $STRING2 ]; then 
+if [ $STRING1 ==  $STRING2 ]; then 
 
    #true
 
