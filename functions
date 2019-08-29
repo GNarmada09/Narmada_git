@@ -20,5 +20,35 @@ echo "take backup of $DIR"
 echo "Backup finish"
 }
 
- 
+
+ga()
+{
+git add .
+}
+
+gs()
+{
+git status
+}
+
+gl()
+{
+LINES=$1
+if [ ! $LINES ]; then
+LINES=5
+fi
+git log --oneline -$LINES
+}
+
+show_dir()
+{
+ls -l | grep '^d'
+}
+
+
+gp()
+{
+git push origin master
+}
+
 
