@@ -1,0 +1,24 @@
+
+
+### My First function ####
+
+Nammu()
+{
+echo "Welcome to Devops"
+echo "Todays date"
+
+date
+
+}
+
+#. /home/gnarmada/Narmada_git/scripts
+
+take_backup()
+{
+ DIR=$1
+echo "take backup of $DIR"
+echo "Backup finish"
+}
+
+ 
+
